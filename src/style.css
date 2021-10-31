@@ -631,8 +631,8 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .box-border {
@@ -651,12 +651,12 @@ video {
   min-height: 100vh;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-6 {
   width: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .translate-x-8 {
@@ -689,20 +689,12 @@ video {
           animation: spin 1s linear infinite;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
 .items-center {
   align-items: center;
 }
 
 .justify-end {
   justify-content: flex-end;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .bg-gray-100 {
@@ -804,6 +796,12 @@ form {
   padding: 1.5rem;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.container-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
 
 .form-group {
@@ -953,6 +951,14 @@ button.donate:hover, button.donate:focus {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
   }
+
+  .container-form-group {
+    flex-direction: row;
+  }
+
+  .container-form-group {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -962,14 +968,6 @@ button.donate:hover, button.donate:focus {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
   }
 
   .md\:text-4xl {
