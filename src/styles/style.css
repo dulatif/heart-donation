@@ -30,6 +30,10 @@ form {
     @apply p-6 shadow-md rounded-lg mx-auto;
 }
 
+.container-form-group {
+    @apply flex flex-col gap-0
+}
+
 .form-group {
     @apply my-2;
 }
@@ -98,5 +102,9 @@ button.donate:hover , button.donate:focus {
 
     .form-group {
         @apply my-5;
+    }
+
+    .container-form-group {
+        @apply flex-row gap-8;
     }
 }
